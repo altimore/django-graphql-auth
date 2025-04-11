@@ -255,20 +255,24 @@ Django = ">=2.2"
 
 [[package]]
 name = "django-graphql-jwt"
-version = "0.3.0"
-description = "JSON Web Token for Django GraphQL"
+version = "0.4.0"
+description = "JSON Web Token for Django GraphQL."
 optional = false
-python-versions = "*"
+python-versions = ">=3.6"
 files = [
-    {file = "django-graphql-jwt-0.3.0.tar.gz", hash = "sha256:c9c611d98510b57146c21484478eae793249553af3766a593e8f25ce73d3255a"},
-    {file = "django_graphql_jwt-0.3.0-py2.py3-none-any.whl", hash = "sha256:bcf0882a492e2148cba7cba3c39cf57834f736a2c289b66852239faf9b59b61e"},
+    {file = "django_graphql_jwt-0.4.0-py3-none-any.whl", hash = "sha256:5823aa8ac9bf0b7a6e3b2febd029598b332c41fe9043d89900c116fcecd23f5e"},
+    {file = "django_graphql_jwt-0.4.0.tar.gz", hash = "sha256:537972519f0deeec7a0e4a306ddfed1fe385266ef61c9f78c54cd04ac01a171e"},
 ]
 
 [package.dependencies]
-Django = ">=1.11"
+django = ">=2.0"
+graphene = ">=2.1.5"
 graphene-django = ">=2.0.0"
-graphql-core = ">=2.1,<3"
-PyJWT = ">=1.5.0"
+pyjwt = ">=2,<3"
+
+[package.extras]
+doc = ["sphinx"]
+test = ["black", "codecov", "cryptography", "flake8", "isort", "pytest", "pytest-cov", "pytest-django"]
 
 [[package]]
 name = "docopt"
@@ -784,4 +788,4 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=4.6)", "pytest-black (
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.6"
-content-hash = "1b79d2af995ac935092328b8bcd8bd3bed22d2166362d74955241d25375539e9"
+content-hash = "cb8078783943b38c6a4f1b1bb4ae457209ca75eb413f910ef24bd640dfff42cb"

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "graphql_auth"
-version = "0.1.0"
+version = "0.1.1"
 description = "Graphql and relay authentication with Graphene for Django."
 authors = ["pedrobern <pedrobermoreira@gmail.com>"]
 license = "MIT"
@@ -11,7 +11,7 @@ documentation = "https://django-graphql-auth.readthedocs.io/en/latest/"
 [tool.poetry.dependencies]
 python = ">=3.6"
 Django = ">=2.2.0"
-django-graphql-jwt = "0.3.0"
+django-graphql-jwt = ">=0.3.0"
 django-filter = ">=2.2.0"
 graphene-django = ">=2.1.8"
 graphene = ">=2.1.8"
