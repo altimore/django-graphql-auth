@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "graphql_auth"
+version = "0.1.0"
+description = "Graphql and relay authentication with Graphene for Django."
+authors = ["pedrobern <pedrobermoreira@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/PedroBern/django-graphql-auth"
+documentation = "https://django-graphql-auth.readthedocs.io/en/latest/"
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+Django = ">=2.2.0"
+django-graphql-jwt = "0.3.0"
+django-filter = ">=2.2.0"
+graphene-django = ">=2.1.8"
+graphene = ">=2.1.8"
+PyJWT = ">=2.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=3.6.3"
+pytest-cov = ">=2.4.0"
+pytest-django = ">=3.1.2"
+coveralls = "*"
+black = "19.3b0"
+flake8 = "3.7.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
